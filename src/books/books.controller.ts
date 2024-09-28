@@ -1,8 +1,9 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, Query, } from '@nestjs/common';
 import { BooksService } from './books.service';
 import { CreateBookDto } from './dto/create-book.dto';
 import { UpdateBookDto } from './dto/update-book.dto';
 import { ApiTags } from '@nestjs/swagger';
+import { BooksQueryDto } from './dto/query.dto';
 
 @ApiTags('Books')
 @Controller('books')
@@ -15,22 +16,23 @@ export class BooksController {
   }
 
   @Get()
-  findAll() {
-    return this.booksService.findAll();
+  findAll(@Query() query: BooksQueryDto) {
+    return this.booksService.findAll(query);
   }
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.booksService.findOne(+id);
+    return this.booksService.findOne(id);
+  }
+
+  @Patch('/delete/:id')
+  remove(@Param('id') id: string) {
+    return this.booksService.remove(id);
   }
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateBookDto: UpdateBookDto) {
-    return this.booksService.update(+id, updateBookDto);
+    return this.booksService.update(id, updateBookDto);
   }
 
-  @Delete(':id')
-  remove(@Param('id') id: string) {
-    return this.booksService.remove(+id);
-  }
 }
