@@ -1,73 +1,104 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+Aquí tienes un archivo `README.md` en inglés para tu proyecto:
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+```markdown
+# Library Clean Code
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+This is a library management system built using NestJS and MongoDB, following clean code principles.
 
-## Description
+## Prerequisites
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Before running this project, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (version 16 or higher)
+- [npm](https://www.npmjs.com/) (version 8 or higher)
+- [MongoDB](https://www.mongodb.com/) (Ensure MongoDB is running locally or have access to a MongoDB cloud instance)
 
 ## Installation
 
+1. Clone the repository:
+
+   ```bash
+   git clone <https://github.com/Anaisa06/library-clean-code.git>
+   ```
+
+2. Navigate into the project directory:
+
+   ```bash
+   cd library-clean-code
+   ```
+
+3. Install the project dependencies:
+
+   ```bash
+   npm install
+   ```
+
+## Running the Application
+
+### Development Mode
+
+To start the project in development mode with file watching, use:
+
 ```bash
-$ npm install
+npm run start:dev
 ```
 
-## Running the app
+### Production Mode
+
+To build and run the application in production mode, use:
 
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+npm run build
+npm run start:prod
 ```
 
-## Test
+## Running Tests
+
+This project uses **Jest** for unit testing.
+
+### Run Unit Tests
 
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+npm run test
 ```
 
-## Support
+### Run Unit Tests in Watch Mode
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+```bash
+npm run test:watch
+```
 
-## Stay in touch
+### Run Test Coverage
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+```bash
+npm run test:cov
+```
 
-## License
 
-Nest is [MIT licensed](LICENSE).
+## Linting
+
+To lint the codebase and automatically fix errors:
+
+```bash
+npm run lint
+```
+
+## Formatting Code
+
+This project uses **Prettier** for code formatting. To format your code:
+
+```bash
+npm run format
+```
+
+## API Documentation
+
+The project uses **Swagger** for API documentation. Once the application is running, access the documentation at:
+
+```
+http://localhost:3000/api/v1/docs
+```
+
+Also, you can check the UML diagrams in the following link:
+https://drive.google.com/file/d/1vKaYVz7x3w5rdZLWWq1g7665J-k601d4/view?usp=sharing
+
