@@ -98,3 +98,7 @@ The project uses **Swagger** for API documentation. Once the application is runn
 ```
 http://localhost:3000/api/v1/docs
 ```
+
+Also, you can check the UML diagrams in the following link:
+https://drive.google.com/file/d/1vKaYVz7x3w5rdZLWWq1g7665J-k601d4/view?usp=sharing
+
